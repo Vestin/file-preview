@@ -1,0 +1,32 @@
+{
+    "name": "vestin/file-preview",
+    "description": "file preview geneartor for php",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "vestin",
+            "email": "vestinzds@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ext-json": "*",
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "autoload": {
+      "psr-4": {
+        "Vestin\\FilePreview\\": "src/",
+        "Test\\": "test/"
+      }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    }
+}
