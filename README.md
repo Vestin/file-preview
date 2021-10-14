@@ -20,7 +20,8 @@ composer require vestin/file-preview
 ```
 
 # Usage
-basic
+
+## basic
 ```
 $generator = new \Vestin\FilePreview\Generator();
 try{
@@ -31,7 +32,7 @@ try{
 }
 ```
 
-options
+## options
 
 for video
 * scale,  see detail in http://trac.ffmpeg.org/wiki/Scaling
@@ -45,7 +46,6 @@ $generator->generate('/path/to/file.mp4','/path/to/output.jpg',[
 ```
 
 for other type of file
-
 * width
 * height
 
@@ -59,7 +59,6 @@ $generator->generate('/path/to/file.pdf','/path/to/output.jpg',[
 To be more stable, you can run `unoconv` as [listener](https://github.com/dagwieers/unoconv#start-your-own-unoconv-listener) before running the file preview generation.
 ```
 $ unoconv --listener
-$ node script_with_file_preview_generations.js
 ```
 
 ## Document formats
